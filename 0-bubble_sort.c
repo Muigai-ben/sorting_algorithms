@@ -4,6 +4,7 @@
  * @array:the array whose elements are to be swapped
  * @a:the first element to swap
  * @b:the second element to swap
+ * Return:nothing
  */
 
 void swap(int *array, int a, int b)
@@ -19,6 +20,7 @@ void swap(int *array, int a, int b)
  * bubble - compares elements at array and swaps them
  * @array:poinret to the array
  * @size:the size of the array
+ * Return:nothing
  */
 
 void bubble(int *array, size_t size)
@@ -40,6 +42,7 @@ void bubble(int *array, size_t size)
  * bubble_sort - sorts the elements of the array
  * @array:pointer to the array
  * @size:size of array
+ * Return:nothing
  */
 
 void bubble_sort(int *array, size_t size)
