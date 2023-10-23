@@ -8,7 +8,6 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *curr, *swap, *tmp;
 
-<<<<<<< HEAD
 	if (!list || *list == NULL)
 		return;
 	curr = *list;
