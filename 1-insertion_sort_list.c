@@ -42,20 +42,3 @@ void insertion_sort_list(listint_t **list)
 		curr = curr->next;
 	}
 }
-=======
-void insertion_sort_list(listing_t **list)
-{
-
-	listing_t *nodes, *prev, *next;
-
-	if (!*list || !(*list)->next)
-
-	return;
-	for nodes = (*list)->next; nodes != NULL; node=tmp)
-{
-	tmp = node->next;
-		insert = node->prev;
-		while (insert != NULL && node->n < insert->n)
-		{
-		{
->>>>>>> 81dd6431ed1c2e5a0936ce5341d76c0b7fa7ac69
