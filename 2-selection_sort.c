@@ -17,28 +17,6 @@ void swap(int *array, int a, int b)
 }
 
 /**
-  * idx_sm - located the smallest element and returns the index
-  *@array:input pointer
-  *@start:the first index of array
-  *@end:the lsat index of the array
-  *Return:index of smallest element
-  */
-size_t idx_sm(int *array, size_t start, size_t end)
-{
-	size_t i = start, j;
-
-	j = i;
-	while (i <= end)
-	{
-		if (array[i] < array[j])
-		{
-			j = i;
-		}
-		i++;
-	}
-	return (j);
-}
-/**
   * selection_sort - sorts an array by looking for the smallest elem
   *@array:the array to be sorted
   *@size:size of the array
@@ -46,16 +24,30 @@ size_t idx_sm(int *array, size_t start, size_t end)
   */
 void selection_sort(int *array, size_t size)
 {
-	size_t i = 0, j;
+	size_t i = 0, j, min;
 
 	if (!array && size <= 1)
 		return;
 
 	while (i < size - 1)
 	{
-		j = idx_sm(array, i, size - 1);
-		swap(array, i, j);
+		min = i;
+		j = i + 1;
+
+		while (j < size)
+		{
+			if (array[j] < array[min])
+			{
+				min = j;
+			}
+			j++;
+		}
+		if (min != i)
+		{
+			swap(array, i, min);
+			print_array(array, size);
+		}
 		i++;
-		print_array(array, size);
 	}
+
 }
