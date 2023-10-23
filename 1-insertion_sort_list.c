@@ -9,7 +9,17 @@
  */
 
 void insertion_sort_list(listing_t **list)
+{
+
 	listing_t *nodes, *prev, *next;
+
 	if (!*list || !(*list)->next)
+
 	return;
-	for nodes = (*list)->next; nodes != NULL; nodes=next
+	for nodes = (*list)->next; nodes != NULL; node=tmp)
+{
+	tmp = node->next;
+		insert = node->prev;
+		while (insert != NULL && node->n < insert->n)
+		{
+		{
