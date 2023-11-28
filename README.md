@@ -1,6 +1,5 @@
 <h1 align="center">0x1B. C - Sorting algorithms & Big O</h1>
 
-
 ### :file_folder: Files / Directories 
 
 #|File|Description
